@@ -123,7 +123,7 @@ const sentenceTypes = [
       "97. 手里缺少将牌，摸到对子优先留住",
       "98. 对手胡牌，你可以选择做深蹲抵消一半失分",
       "99. 本局不吃不碰不杠，如果成功胡牌积分翻倍",
-      "100. 摸到任意花牌，可以强制和下家交换一张手牌"
+      "100. 摸到任意字牌，可以强制和下家交换一张手牌"
     ]
   }
 ]
@@ -230,9 +230,9 @@ onBeforeUnmount(() => {
           id="interval-range"
           v-model.number="intervalMs"
           type="range"
-          min="50"
+          min="30"
           max="2000"
-          step="50"
+          step="25"
           @input="handleIntervalChange"
         />
       </div>
